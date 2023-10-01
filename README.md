@@ -1,14 +1,14 @@
 # QuizSpot - Interactive Quiz Page
 
-👉 This interactive quiz app is designed to engage users with a set of multiple-choice questions.
+This interactive quiz app is designed to engage users with a set of multiple-choice questions.
 The app incorporates HTML, CSS, and JavaScript to create a visually appealing and interactive user experience.
 
-👉 The quiz contains five multiple-choice questions. Each question has four answer options, and the correct answer is assigned for each question.
+The quiz contains five multiple-choice questions. Each question has four answer options, and the correct answer is assigned for each question.
 
-👉 CSS is applied to style the quiz page, including formatting for questions, answer options, and buttons.
+CSS is applied to style the quiz page, including formatting for questions, answer options, and buttons.
 Hover and click effects are implemented to enhance the visual appeal and user experience.
 
-👉 JavaScript is utilized to make the quiz interactive. It manages the display of questions, handles user answers,
+JavaScript is utilized to make the quiz interactive. It manages the display of questions, handles user answers,
 keeps track of the score, and allows navigation through questions.
 
 🌟 Key Functionality :-
