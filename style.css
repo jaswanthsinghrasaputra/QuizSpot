@@ -1,0 +1,72 @@
+.body{
+    background-color: rgb(97, 23, 34);
+}
+.btn{
+    /* background-color: crimson; */
+    border-radius: 10px;
+    padding: 9px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 900;
+    /* border: 20px; */
+    border-color: black;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(218, 32, 212);
+    box-shadow: 0 10px 32px 0 rgb(235, 6, 113);
+}
+.question{
+    margin: 10px auto;
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    border:solid 2px rgb(110, 16, 73);
+    text-align: center;
+    background-color: rgb(227, 145, 14);
+    display: none;
+    color: rgb(92, 19, 39);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.question:hover{
+    box-shadow: 0 10px 32px 0 rgb(178, 7, 245);
+}
+.ansDiv{
+    background-color: crimson;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 50px;
+   
+}
+.buttons{
+    visibility: hidden;
+    padding: 20px;
+ }
+ .buqq:hover{
+    box-shadow: 0 16px 32px 0 yellow;
+    background-color: rgb(218, 128, 235);
+ }
+ .finalbtn{
+    /* background-color: rgb(224, 9, 253); */
+    border-radius: 10px;
+    padding: 9px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+ }
+ .finalbtn:hover{
+    box-shadow: 0 16px 32px 0 rgb(224, 9, 253);
+    background-color: yellow;
+ }

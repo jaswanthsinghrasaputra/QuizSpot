@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <title>Simple_Quiz</title>
+        
+    </head>
+
+    <body class="body" >
+        
+        <div style="text-align: center; margin: 80px auto;">
+            <div >
+                <h1 style="color: rgb(244, 239, 239);" id="text">Simple Quiz ❓</h1>
+                <h2 id="subhead" style="color: rgb(244, 239, 239);">💫 Test your knowledge here.. 💫</h2>    
+                <button  style= border-radius:20px;" class="btn" onclick="startQuiz()" id="startbutton">✨ Start ✨</button>
+            </div>
+            <div class="buttons" id="buttonsdiv">
+                <button class="buqq" style="height:40px; width:40px; border-radius: 10px; " onclick="questiononevisible()" id="buttonone"> 1 </button>
+                <button class="buqq" style="height:40px; width:40px; border-radius: 10px; " onclick="questiontwovisible()" id="buttontwo"> 2 </button>
+                <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionthreevisible()" id="buttonthree"> 3 </button>
+                <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionfourvisible()" id="buttonfour"> 4 </button>
+                <button class="buqq"  style="height:40px; width:40px; border-radius: 10px;" onclick="questionfivevisible()" id="buttonfive"> 5 </button>
+
+            </div>
+            <div class="question" id="question0">
+                <h3>Q1.Which animal is known as the 'Ship of the Desert"?</h3>
+                <form>
+                    <table cellpadding="10px" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="0" id="ques1"> Camel
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="1" id="ques1">Dog
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="2" id="ques1">Cat
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="3" id="ques1">Elephant
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansblock0"> Correct!!</td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="submit" class="btn" id="0" onclick="ansCheck(this.id)">
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Next ⏭️" class="btn" id="0" onclick="nextQuestion(0)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            
+            <div class="question" id="question1">
+                <h3>Q2.Name the largest planet of our Solar System?</h3>
+                <form>
+                    <table cellpadding = "10px" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="quesoneoption0" id="ques1">Sun
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="quesoneoption1" id="ques1">Earth
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="quesoneoption2" id="ques1">Jupiter
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="quesoneoption3" id="ques1">Saturn
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansblock1"> Correct!!</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="submit" class="btn"  id="1" onclick="ansCheck(this.id)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Next ⏭️" class="btn" id="0" onclick="nextQuestion(1)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="question" id="question2">
+                <h3>Q3.Chemical formulae of Hydrochloric acid is ?</h3>
+                <form>
+                    <table cellpadding = "10px" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Hcl
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">H<sub>2</sub>o
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">CaCo<sub>3</sub>
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">None
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansblock2"> Correct!!</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="submit" class="btn" id="2" onclick="ansCheck(this.id)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Next ⏭️" class="btn" id="0" onclick="nextQuestion(2)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            
+            <div class="question" id="question3">
+                <h3>Q4.A person who knows many foreign languages, is usually termed as.</h3>
+                <form>
+                    <table cellpadding = "10px" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Linguist
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Grammarian
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Polyglot
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Bilingual
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansblock3"> Correct!!</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="submit" class="btn" id="3" onclick="ansCheck(this.id)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Next ⏭️" class="btn" id="0" onclick="nextQuestion(3)">
+                            </td>
+                        </tr>
+                   
+                    </table>
+                </form>
+            </div>
+            <div class="question" id="question4">
+                <h3>Q5.Which of the following is a type of software??</h3>
+                <form>
+                    <table cellpadding = "10px" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1"> Mouse
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1"> Keyboard
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Monitor
+                            </td>
+                            <td>
+                                <input type="radio" name="question1" value="qwerty" id="ques1">Operating System
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansblock4">🍾 Correct 🍾</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="submit" class="btn" id="4" onclick="ansCheck(this.id)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" value="Result ✅" class="finalbtn" id="final" onclick="finalScore()">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
