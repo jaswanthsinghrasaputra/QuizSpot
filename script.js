@@ -58,17 +58,20 @@ function ansCheck(buttonNumber){
         }
     }
     ansblock = "ansblock"+buttonNumber;
-    if(ansArray[buttonNumber]==CorrectArray[buttonNumber])
+ if(ansArray[buttonNumber]==CorrectArray[buttonNumber])
     {
          score++
          document.getElementById(ansblock).style.visibility = "visible";
          document.getElementById(ansblock).innerHTML="😊 Correct 😊";
          document.getElementById(ansblock).style.backgroundColor = "green"
+         document.getElementById(ansblock).style.color="white"
          document.getElementById(ansblock).style.fontWeight= "900"
     }
     else
         {
          document.getElementById(ansblock).style.visibility = "visible";
+         document.getElementById(ansblock).style.backgroundColor = "red"
+         document.getElementById(ansblock).style.color="white"
          document.getElementById(ansblock).innerHTML="😒 Wrong 😒";
          document.getElementById(ansblock).style.fontWeight= "900"
     }
